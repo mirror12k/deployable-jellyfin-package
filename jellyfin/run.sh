@@ -12,6 +12,8 @@ mkdir -p "$JELLYFIN_ROOT/config"
 mkdir -p "$JELLYFIN_ROOT/cache"
 mkdir -p "$JELLYFIN_ROOT/media"
 
+chown -R 1000:1000 "$JELLYFIN_ROOT"
+
 echo "[i] copying docker-compose to jellyfin root..."
 cp /app/docker-compose.yml "$JELLYFIN_ROOT/docker-compose.yml"
 
