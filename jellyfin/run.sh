@@ -4,7 +4,6 @@ set -e
 JELLYFIN_ROOT="/jellyfin"
 
 echo "[i] cleaning up old data..."
-rm -rf "$JELLYFIN_ROOT/config"
 rm -rf "$JELLYFIN_ROOT/cache"
 
 echo "[i] creating jellyfin directories..."
