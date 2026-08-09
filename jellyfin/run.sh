@@ -20,6 +20,6 @@ cp /app/docker-compose.yml "$JELLYFIN_ROOT/docker-compose.yml"
 cd "$JELLYFIN_ROOT"
 
 echo "[i] pulling images"
-docker-compose pull
+docker compose pull
 echo "[i] starting jellyfin docker..."
-docker-compose up
+docker compose up
